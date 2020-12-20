@@ -1,4 +1,4 @@
 # X1
 Astronomy Guide
 
-![Live Site](http://eamon02.x1/)
+![Live Site](https://eamon02.github.io/X1/)
