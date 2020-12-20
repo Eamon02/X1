@@ -8,3 +8,8 @@ color changing nav bar
 
 4. directions for calculator?
 
+
+
+-start with weather in background/weather animation based on current location 
+-next scroll to tl calculator
+-then on to astro news 
