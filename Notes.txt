@@ -1,0 +1,10 @@
+color changing nav bar
+
+1. get calculator to work
+
+2. style calculator
+
+3. float calculator / style
+
+4. directions for calculator?
+

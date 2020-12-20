@@ -1,146 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Font awesome css -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Font awesome css -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <!-- Style sheet -->
-    <link rel="stylesheet" href="./style.css">
+  <!-- Style sheet -->
+  <link rel="stylesheet" href="./style.css">
 
-     <!--Let browser know website is optimized for mobile-->
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Let browser know website is optimized for mobile-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>X1</title>
+  <title>X1</title>
 </head>
+
 <body>
-                    <!-- NAV -->
+  <!-- NAV -->
+  <div class="navbar-fixed">
     <nav>
-        <div class="nav-wrapper indigo accent-4">
-          <a href="#!" class="brand-logo">Eamon02</a>
-          <!-- side nav trigger -->
-          <a href="#" class="sidenav-trigger" data-target="slide-out"><i class="fas fa-space-shuttle align-right"></i></a>
+      <div class="nav-wrapper indigo accent-4">
+        <a href="#" class="brand-logo"><i class="fas fa-space-shuttle align-left hide-on-med-and-down"></i>Eamon02</a>
+        <!-- side nav trigger -->
+        <a href="#" class="sidenav-trigger" data-target="slide-out"><i class="fas fa-space-shuttle align-right"></i></a>
 
-          <ul class="right hide-on-med-and-down">
+        <ul class="right hide-on-med-and-down">
 
-            <li><a href="#!" class="waves-effect"><i class="fas fa-user-astronaut"></i>Resume</a></li>
-            <li><div class="divider"></div></li>
-            <li><a href="#!" class="waves-effect"><i class="far fa-calendar-alt"></i>Astro News</a></li>
-            <li><a href="#!" class="waves-effect"><i class="far fa-clock"></i>Time lapse Calculator</a></li>
-            <li><a class="waves-effect" href="#!"><i class="fas fa-cloud-moon"></i>Weather</a></li>
-            <li><a class="waves-effect" href="#!"><i class="material-icons">view_module</i>Portfolio</a></li>
-            <!-- <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li> -->
+          <li><a href="#!" class="waves-effect"><i class="far fa-calendar-alt"></i>Astro News</a></li>
+          <li><a class="waves-effect" href="#!"><i class="fas fa-cloud-moon"></i>Weather</a></li>
+          <li><a href="#!" class="waves-effect"><i class="far fa-clock"></i>Time lapse Calculator</a></li>
+          <li><a href="#!" class="waves-effect"><i class="fas fa-user-astronaut"></i>Resume</a></li>
+          <li><a class="waves-effect" href="#!"><i class="material-icons">view_module</i></a></li>
+          <!-- <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li> -->
 
-          </ul>
-        </div>
-      </nav>
-
-      <!-- Side Nav -->
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Side Nav -->
 
   <ul id="slide-out" class="sidenav">
-      <li>
-        <div class="user-view">
-            <div class="background">
-              <img src="./images/sunset 11-23-2020-43.jpg">
-            </div>
-          <a href="#user"><img class="circle" src="./images/Grassy Knol-2.JPG"></a>
-          <a href="#name"><span class="white-text name">Eamon McHugh</span></a>
-          <a href="#email"><span class="white-text email">eamonmchugh2@gmail.com</span></a>
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="./images/sunset 11-23-2020-43.jpg">
         </div>
-      </li>
-    
+        <a href="#user"><img class="circle" src="./images/Grassy Knol-2.JPG"></a>
+        <a href="#name"><span class="white-text name">Eamon McHugh</span></a>
+        <a href="#email"><span class="white-text email">eamonmchugh2@gmail.com</span></a>
+      </div>
+    </li>
+
     <li><a href="#!" class="waves-effect"><i class="fas fa-user-astronaut"></i>Resume</a></li>
-    <li><div class="divider"></div></li>
+    <li>
+      <div class="divider"></div>
+    </li>
     <li><a href="#!" class="waves-effect"><i class="far fa-calendar-alt"></i>Astro News</a></li>
     <li><a href="#!" class="waves-effect"><i class="far fa-clock"></i>Time lapse Calculator</a></li>
     <li><a class="waves-effect" href="#!"><i class="fas fa-cloud-moon"></i>Weather</a></li>
     <li><a class="waves-effect" href="#!"><i class="material-icons">view_module</i>Portfolio</a></li>
   </ul>
 
-        <!-- Time Lapse calc -->
+  <!-- Time Lapse calc -->
 
-    <div class="row">
-    <div class="timelapse z-depth-2 col s12">
-        <div class="tl-header">
-            Time Lapse Calculator
-        </div>
-        <div class="tl-body">
-            <div class="row">
-                <div class="col s6">
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">schedule</i>
-                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                      <label for="icon_prefix2">Clip Length</label>
-                    </div>
-
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">shutter_speed</i>
-                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                      <label for="icon_prefix2">Exposure Length</label>
-                    </div>
-
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">alarm</i>
-                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                      <label for="icon_prefix2">Record Time</label>
-                    </div>
-
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">theaters</i>
-                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                      <label for="icon_prefix2">Frames Per Second</label>
-                    </div>
-
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">add_a_photo</i>
-                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                      <label for="icon_prefix2">Capture Interval</label>
-                    </div>
-
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">camera_roll</i>
-                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                      <label for="icon_prefix2">Number of Photos</label>
-                    </div>
-
-                  </div>
-                    <div class="tl-clear col s12">
-                      <a class="btn-floating btn-large waves-effect waves-light cyan accent-3"><i class="material-icons">loop</i></a>
-                    </div>
-                </div>
+  <div class="row">
+    <div class="timeLapse z-depth-2 col s12 m6 l3 push-1">
+      <h1 class="tl-header">
+        Time Lapse Calculator
+      </h1>
+      <div class="tl-body">
+          
+          <div class="col 6">
+            <div class="input-field inline col s10">
+              <i class="material-icons prefix">schedule</i>
+              <input placeholder="" id="clipLength" type="number" class="validate clipLength">
+              <label for="clipLength">Clip Length</label>
             </div>
-        </div>
-    </div>
-    </div>
-    
-      <div class="omni-calculator" data-calculator="other/time-lapse" data-width="300" data-config='{}' data-currency="USD" data-show-row-controls="false" data-version="3" data-t="1608104857240">
-        <div class="omni-calculator-header">Time Lapse Calculator</div>
-        <div class="omni-calculator-footer">
-          <a href="https://www.omnicalculator.com/other/time-lapse" target="_blank"><img alt="Omni" class="omni-calculator-logo" src="https://cdn.omnicalculator.com/embed/omni-calculator-logo-long.svg" /></a>
-        </div>
-      </div>
-      <script async src="https://cdn.omnicalculator.com/sdk.js"></script>
 
-            
-            
+            <div class="input-field inline col s10">
+              <i class="material-icons prefix">theaters</i>
+              <input placeholder="24" id="first_name" type="number" class="validate FPS">
+              <label for="FPS">Frames Per Second</label>
+            </div>
+
+            <div class="input-field inline col s10">
+              <i class="material-icons prefix">camera_roll</i>
+              <input disabled placeholder="" id="first_name" type="number" class="validate numPhotos">
+              <label for="numPhotos">Number of Photos</label>
+            </div>
+
+            <div class="input-field inline col s10">
+              <i class="material-icons prefix">shutter_speed</i>
+              <input placeholder="" id="first_name" type="number" class="validate exposureLength">
+              <label for="exposureLength">Exposure Length</label>
+            </div>
+
+            <div class="input-field inline col s10">
+              <i class="material-icons prefix">alarm</i>
+              <input placeholder="" id="first_name" type="number" class="validate recordTime">
+              <label for="recordTime">Record Time</label>
+            </div>
+
+            <div class="input-field inline col s10">
+              <i class="material-icons prefix">add_a_photo</i>
+              <input placeholder="" id="first_name" type="number" class="validate captureInterval">
+              <label for="captureInterval">Capture Interval</label>
+            </div>
+          </div>
+
+          <div class="tl-clear">
+            <a class="btn-floating btn-large waves-effect waves-light cyan accent-3"><i class="material-icons"
+                id="clearBtn">loop</i></a>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- OMNI CALC
+
+  <div class="omni-calculator" data-calculator="other/time-lapse" data-width="300" data-config='{}' data-currency="USD"
+    data-show-row-controls="false" data-version="3" data-t="1608104857240">
+    <div class="omni-calculator-header">Time Lapse Calculator</div>
+    <div class="omni-calculator-footer">
+      <a href="https://www.omnicalculator.com/other/time-lapse" target="_blank"><img alt="Omni"
+          class="omni-calculator-logo" src="https://cdn.omnicalculator.com/embed/omni-calculator-logo-long.svg" /></a>
+    </div>
+  </div>
+  <script async src="https://cdn.omnicalculator.com/sdk.js"></script> -->
+
+
+
 </body>
 
 <!-- Jquery Init -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+  integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+  crossorigin="anonymous"></script>
 
 <!-- Compiled and minified JavaScript from materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <!-- main js init -->
-<script src="main.js"></script>
+<script src="./js/main.js"></script>
+
+<!-- time-lapse JS -->
+<script src="./js/TimeLapse.js"></script>
 
 </html>
