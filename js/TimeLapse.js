@@ -1,28 +1,24 @@
-const clipLength = document.querySelector(".clipLength").value;
-const exposurLength = document.querySelector(".exposureLength").value;
-const recordTime = document.querySelector(".recordTime").value;
-const FPS = document.querySelector(".FPS").value;
-const captureInterval = document.querySelector(".captureInterval").value;
+// var photos = Number
 
-pics()
+$(".pics").on("change", "input", picsFunc)
 
-function pics(){
-    const numPhotos = document.querySelector(".numPhotos").value = clipLength * FPS;
+function picsFunc(){
+    // alert(e.target.value);
+    let clipVal = $("#clipLength").val();
+    let FPSVal = $("#FPS").val();
+    // console.log(clipVal,FPSVal)
+    let photos = clipVal*FPSVal;
+    // console.log(photos)    
+    $("#numPhotos").val(photos)
+    // Capture(photos)
 }
 
+$("#recordTime").on("change", Capture)
 
-console.log(FPS)
-
-if(FPS === !FPS){
-    FPS.value("24");
+function Capture(photos){
+    let recordTime = $("#recordTime").val();
+    photos = $("#numPhotos").val()
+    // console.log(recordTime)
+    let interval = photos/(recordTime*60);
+    $("#captureInterval").val(interval*100)
 }
-
-console.log(FPS)
-
-// let photos = clipLength * FPS;
-// numPhotos.innerHTML(photos);
-
-// console.log(numPhotos)
-
-
-
