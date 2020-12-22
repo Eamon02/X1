@@ -62,7 +62,11 @@
 }
 
 .sun{
-  opacity: 0;
+  color: rgba(250, 250, 28, 0.904);
+}
+
+.sun.dark{
+  color: grey;
 }
 
 .moon{
