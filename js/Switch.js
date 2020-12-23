@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         $('.tl-header').text("Banana")
         $('#calc1').addClass('hide')
         $('#calc2').removeClass('hide')
+        $('.tl-header').text("Astro Calculator")
       }
     });
   });
