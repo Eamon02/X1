@@ -13,3 +13,6 @@ color changing nav bar
 -start with weather in background/weather animation based on current location 
 -next scroll to tl calculator
 -then on to astro news 
+
+
+minimum height to header 
