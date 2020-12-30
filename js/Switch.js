@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('Checked');
       } else {
         // do that
+        AstroStyle()
         console.log('Not checked');
         $('.tl-header').text("Banana")
         $('#calc1').addClass('hide')

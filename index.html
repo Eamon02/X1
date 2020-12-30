@@ -30,7 +30,8 @@
       <div class="nav-wrapper indigo accent-4">
         <a href="#" class="brand-logo"><i class="fas fa-space-shuttle align-left hide-on-med-and-down"></i>Eamon02</a>
         <!-- side nav trigger -->
-        <a href="#" class="sidenav-trigger" data-target="slide-out"><i class="fas fa-space-shuttle align-right" id="spaceship"></i></a>
+        <a href="#" class="sidenav-trigger" data-target="slide-out"><i class="fas fa-space-shuttle align-right"
+            id="spaceship"></i></a>
 
         <ul class="right hide-on-med-and-down">
 
@@ -72,22 +73,22 @@
   <!-- Time Lapse calc -->
 
   <div class="row TL">
-    <div class="timeLapse z-depth-2 col s12 m6 l3 push-1">
+    <div class="timeLapse col s12 m6 l3 push-1">
       <h1 class="tl-header">
         Time Lapse Calculator
       </h1>
 
-       <!-- Switch -->
-    <div class="row">
-       <div class="switch col s6 offset-s3">
-        <label id="DayMode">
-          <i class="material-icons prefix sun">wb_sunny</i>
-          <input type="checkbox" class="checkbox">
-          <span class="lever"></span>
-          <i class="material-icons prefix moon">brightness_2</i>
-        </label>
+      <!-- Switch -->
+      <div class="row">
+        <div class="switch col s6 offset-s3">
+          <label id="DayMode">
+            <i class="material-icons prefix sun">wb_sunny</i>
+            <input type="checkbox" class="checkbox">
+            <span class="lever"></span>
+            <i class="material-icons prefix moon">brightness_2</i>
+          </label>
+        </div>
       </div>
-    </div>
 
       <div class="row">
         <div class="divider col-s6"></div>
@@ -95,110 +96,112 @@
 
       <div class="tl-body" id="calc1">
 
-        <div class="col 6" id="original">
-          <div class="input-field inline col s10 pics">
+        <div class="row">
+          <div class="input-field inline col s10 offset-s1 pics">
+            <i class="material-icons prefix">schedule</i>
+            <input placeholder="" id="clipLength" type="number" class="validate clipLength">
+            <label for="clipLength">Clip Length (Seconds)</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field inline col s10 offset-s1">
+            <i class="material-icons prefix">alarm</i>
+            <input placeholder="" id="recordTime" type="number" class="validate recordTime">
+            <label for="recordTime">Record Time (Minutes)</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field inline col s10 offset-s1 pics">
+            <i class="material-icons prefix">theaters</i>
+            <input value="24" id="FPS" type="number" class="validate FPS">
+            <label for="FPS">Frames Per Second</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field inline col s10 offset-s1">
+            <i class="material-icons prefix">camera_roll</i>
+            <input disabled placeholder="" id="numPhotos" type="number" class="validate numPhotos">
+            <label for="numPhotos">Number of Photos</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field inline col s10 offset-s1">
+            <i class="material-icons prefix">add_a_photo</i>
+            <input placeholder="" id="captureInterval" type="number" class="validate captureInterval">
+            <label for="captureInterval">Capture Interval (Seconds)</label>
+          </div>
+        </div>
+
+        <div class="tl-clear">
+          <a class="btn-floating btn-large waves-effect waves-light cyan accent-3"><i class="material-icons"
+              id="clearBtn">loop</i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Astro Calculator -->
+  <div class="row TL">
+    <div class="timeLapse col s12 m6 l3 push-1">
+      <div class="tl-body row hide" id="calc2">
+
+        <div class="row">
+          <div class="input-field inline col s10 offset-s1 pics">
             <i class="material-icons prefix">schedule</i>
             <input placeholder="" id="clipLength" type="number" class="validate clipLength">
             <label for="clipLength">Clip Length</label>
           </div>
+        </div>
 
-          <div class="input-field inline col s10 pics">
-            <i class="material-icons prefix">theaters</i>
-            <input value="24" id="FPS" type="number" class="validate FPS">
-            <label for="FPS">Frames Per Second</label>
-          </div>
-
-          <div class="input-field inline col s10">
-            <i class="material-icons prefix">camera_roll</i>
-            <input disabled placeholder="" id="numPhotos" type="number" class="validate numPhotos">
-            <label for="numPhotos">Number of Photos</label>
-          </div>
-
-          <div class="input-field inline col s10">
+        <div class="row">
+          <div class="input-field inline col s10 offset-s1">
             <i class="material-icons prefix">shutter_speed</i>
             <input placeholder="" id="first_name" type="number" class="validate exposureLength">
             <label for="exposureLength">Exposure Length</label>
           </div>
+        </div>
 
-          <div class="input-field inline col s10">
+        <div class="row">
+          <div class="input-field inline col s10 offset-s1 pics">
+            <i class="material-icons prefix">theaters</i>
+            <input value="24" id="FPS" type="number" class="validate FPS">
+            <label for="FPS">Frames Per Second</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field inline col s10 offset-s1">
             <i class="material-icons prefix">alarm</i>
             <input placeholder="" id="recordTime" type="number" class="validate recordTime">
             <label for="recordTime">Record Time</label>
           </div>
+        </div>
 
-          <div class="input-field inline col s10">
-            <i class="material-icons prefix">add_a_photo</i>
-            <input placeholder="" id="captureInterval" type="number" class="validate captureInterval">
-            <label for="captureInterval">Capture Interval</label>
+        <div class="row">
+          <div class="input-field inline col s10 offset-s1">
+            <i class="material-icons prefix">camera_roll</i>
+            <input disabled placeholder="" id="numPhotos" type="number" class="validate numPhotos">
+            <label for="numPhotos">Number of Photos</label>
           </div>
+        </div>
+
+        <div class="input-field inline col s10 offset-s1">
+          <i class="material-icons prefix">add_a_photo</i>
+          <input placeholder="" id="captureInterval" type="number" class="validate captureInterval">
+          <label for="captureInterval">Capture Interval</label>
         </div>
 
         <div class="tl-clear">
           <a class="btn-floating btn-large waves-effect waves-light cyan accent-3"><i class="material-icons"
               id="clearBtn">loop</i></a>
         </div>
-
       </div>
     </div>
   </div>
-
-
-  <!-- <div class="row Astro">
-    <div class="timeLapse z-depth-2 col s12 m6 l3 push-1">
-      <h1 class="tl-header">
-        Time Lapse Calculator
-      </h1>
-      <div class="divider"></div> -->
-      
-      <div class="tl-body hide" id="calc2">
-
-        <div class="col 6 new">
-          <div class="input-field inline col s10 pics">
-            <i class="material-icons prefix">schedule</i>
-            <input placeholder="" id="clipLength" type="number" class="validate clipLength">
-            <label for="clipLength">potato</label>
-          </div>
-
-          <div class="input-field inline col s10 pics">
-            <i class="material-icons prefix">theaters</i>
-            <input value="24" id="FPS" type="number" class="validate FPS">
-            <label for="FPS">Frames Per Second</label>
-          </div>
-
-          <div class="input-field inline col s10">
-            <i class="material-icons prefix">camera_roll</i>
-            <input disabled placeholder="" id="numPhotos" type="number" class="validate numPhotos">
-            <label for="numPhotos">Number of Photos</label>
-          </div>
-
-          <div class="input-field inline col s10">
-            <i class="material-icons prefix">shutter_speed</i>
-            <input placeholder="" id="first_name" type="number" class="validate exposureLength">
-            <label for="exposureLength">Exposure Length</label>
-          </div>
-
-          <div class="input-field inline col s10">
-            <i class="material-icons prefix">alarm</i>
-            <input placeholder="" id="recordTime" type="number" class="validate recordTime">
-            <label for="recordTime">Record Time</label>
-          </div>
-
-          <div class="input-field inline col s10">
-            <i class="material-icons prefix">add_a_photo</i>
-            <input placeholder="" id="captureInterval" type="number" class="validate captureInterval">
-            <label for="captureInterval">Capture Interval</label>
-          </div>
-        </div>
-
-        <div class="tl-clear">
-          <a class="btn-floating btn-large waves-effect waves-light cyan accent-3"><i class="material-icons"
-              id="clearBtn">loop</i></a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
   <!-- OMNI CALC
 
   <div class="omni-calculator" data-calculator="other/time-lapse" data-width="300" data-config='{}' data-currency="USD"
@@ -237,4 +240,5 @@
 
 <!-- animate js -->
 <script src="./js/animate.js"></script>
+
 </html>
